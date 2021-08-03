@@ -1,5 +1,6 @@
 {
   "name": "notepad",
+  "homepage": "https://patelsatin.github.io/notepad",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,6 +15,7 @@
     "bootstrap": "^4.6.0",
     "expo-font": "^9.0.0",
     "gapi-script": "^1.1.0",
+    "gh-pages": "^3.2.3",
     "immer": "^8.0.1",
     "jquery": "^3.5.1",
     "latest-version": "^5.1.0",
@@ -34,6 +36,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

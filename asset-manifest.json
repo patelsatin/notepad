@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/notepad/static/css/main.6b95a5b0.chunk.css",
-    "main.js": "/notepad/static/js/main.6d0949f4.chunk.js",
-    "main.js.map": "/notepad/static/js/main.6d0949f4.chunk.js.map",
-    "runtime-main.js": "/notepad/static/js/runtime-main.67630b70.js",
-    "runtime-main.js.map": "/notepad/static/js/runtime-main.67630b70.js.map",
-    "static/css/2.040c2062.chunk.css": "/notepad/static/css/2.040c2062.chunk.css",
-    "static/js/2.5f489f1c.chunk.js": "/notepad/static/js/2.5f489f1c.chunk.js",
-    "static/js/2.5f489f1c.chunk.js.map": "/notepad/static/js/2.5f489f1c.chunk.js.map",
-    "static/js/3.45cae8d6.chunk.js": "/notepad/static/js/3.45cae8d6.chunk.js",
-    "static/js/3.45cae8d6.chunk.js.map": "/notepad/static/js/3.45cae8d6.chunk.js.map",
+    "main.css": "/notepad/static/css/main.b23275ca.chunk.css",
+    "main.js": "/notepad/static/js/main.93d83d32.chunk.js",
+    "main.js.map": "/notepad/static/js/main.93d83d32.chunk.js.map",
+    "runtime-main.js": "/notepad/static/js/runtime-main.1105c450.js",
+    "runtime-main.js.map": "/notepad/static/js/runtime-main.1105c450.js.map",
+    "static/css/2.9b0e51a9.chunk.css": "/notepad/static/css/2.9b0e51a9.chunk.css",
+    "static/js/2.9b80816a.chunk.js": "/notepad/static/js/2.9b80816a.chunk.js",
+    "static/js/2.9b80816a.chunk.js.map": "/notepad/static/js/2.9b80816a.chunk.js.map",
+    "static/js/3.73c7a0d7.chunk.js": "/notepad/static/js/3.73c7a0d7.chunk.js",
+    "static/js/3.73c7a0d7.chunk.js.map": "/notepad/static/js/3.73c7a0d7.chunk.js.map",
     "index.html": "/notepad/index.html",
-    "static/css/2.040c2062.chunk.css.map": "/notepad/static/css/2.040c2062.chunk.css.map",
-    "static/css/main.6b95a5b0.chunk.css.map": "/notepad/static/css/main.6b95a5b0.chunk.css.map",
-    "static/js/2.5f489f1c.chunk.js.LICENSE.txt": "/notepad/static/js/2.5f489f1c.chunk.js.LICENSE.txt"
+    "static/css/2.9b0e51a9.chunk.css.map": "/notepad/static/css/2.9b0e51a9.chunk.css.map",
+    "static/css/main.b23275ca.chunk.css.map": "/notepad/static/css/main.b23275ca.chunk.css.map",
+    "static/js/2.9b80816a.chunk.js.LICENSE.txt": "/notepad/static/js/2.9b80816a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.67630b70.js",
-    "static/css/2.040c2062.chunk.css",
-    "static/js/2.5f489f1c.chunk.js",
-    "static/css/main.6b95a5b0.chunk.css",
-    "static/js/main.6d0949f4.chunk.js"
+    "static/js/runtime-main.1105c450.js",
+    "static/css/2.9b0e51a9.chunk.css",
+    "static/js/2.9b80816a.chunk.js",
+    "static/css/main.b23275ca.chunk.css",
+    "static/js/main.93d83d32.chunk.js"
   ]
 }

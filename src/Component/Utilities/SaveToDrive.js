@@ -9,6 +9,7 @@ var SCOPE = "https://www.googleapis.com/auth/drive";
 var discoveryUrl = "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest";
 
 class SaveToDrive extends Component {
+  
   state = {
     show:false,
     name: "",
@@ -70,6 +71,7 @@ class SaveToDrive extends Component {
       });
       this.state.googleAuth.signIn();
       this.updateSigninStatus();
+     
     } else {
       var f = document.querySelector("#errormsg");
       f.style.display = "block";
@@ -155,21 +157,24 @@ class SaveToDrive extends Component {
     });
   }
   render() {
+    
     return (
+      
       <div className="App">
         <Modal.Dialog id="drivemodal" centered>
           <Modal.Header closeButton onClick={this.closeModal}>
             <Modal.Title>File Name:</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <input type="text" id="fileName" placeholder="Enter file Name" />
+            <form onSubmit={this.signInFunction}>
+            <input type="text" id="fileName" placeholder="Enter file Name" required/>
             <span id="errormsg">Enter File Name first</span>
+            <button type="submit" class="btn btn-sm animated-button thar-one">Save</button> 
+            </form>
           </Modal.Body>
 
           <Modal.Footer>
-            <Button variant="primary" id="signin-btn">
-              Save
-            </Button>
+            
           </Modal.Footer>
         </Modal.Dialog>
 

@@ -111,7 +111,6 @@ function Pad(props) {
   const [fName, setfName] = useState("");
   function saveToDrive() {
     closeModal();
-    window.alert("Sorry we are unable to provide this feature...");
     var e = document.querySelector("#w3review");
     setValue(e.innerText);
     setSave("drive");

@@ -1,0 +1,24 @@
+#fileName{
+    border:none;
+    border-bottom: 2px solid #19b3d3;
+    width: 100%;
+  }
+  input:focus {
+    outline: none;
+    border:none;
+   
+  }
+  .swtalert{
+      display: none;
+  }
+  #errormsg{
+    color: red;
+    font-size: 14px;
+    display: none;
+  }
+  @media screen and (max-width: 771px) {
+    #drivemodal{
+      margin: auto;
+      width: 50%;
+    }
+  }

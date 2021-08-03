@@ -1,0 +1,130 @@
+#bolder{
+  font-size:40px;
+}
+#printmodal{
+  display: none;
+}
+#fileName1{
+  border:none;
+  border-bottom: 2px solid #19b3d3;
+  width: 100%;
+}
+input:focus {
+  outline: none;
+  border:none;
+ 
+}
+#errormsg1{
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+#aboutmodal
+{
+  display: none;
+}
+#modal{
+  display: none;
+}
+#savemodal{
+  display: none;
+  margin: auto;
+  width: 50%;
+}
+.newsp{
+  display: inherit;
+  color: red;
+}
+#content {
+  width: (100% - 250px);
+ margin-top: 60px;
+  padding: 20px;
+  margin-left: 250px;
+  background-position: center;
+  background-size: cover;
+  height:100px;
+  transition: 0.5s;
+  border: none;
+}
+
+#w3review {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 600px;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: normal;
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 771px) {
+  #content{
+    margin-left: 50px;
+  }
+  #printmodal{
+    margin: auto;
+    width: 50%;
+  }
+  #savemodal{
+   
+    margin: auto;
+    width: 50%;
+  }
+  #aboutmodal{
+    margin: auto;
+    width: 50%;
+  }
+  #modal{
+    margin: auto;
+    width: 50%;
+  }
+  #drivemodal{
+    margin: auto;
+    width: 50%;
+  }
+  #w3review{
+  margin-left: 20px;
+  }
+}
+#HeaderForPrint{
+  display: none;
+ 
+  
+}
+#lfp{
+  font-family:pacifico;
+  
+}
+#filename{
+ float: right;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  display: none;
+  font-size: 30px;
+ 
+  text-align: center;
+  color: black;
+}
+@media print{
+  #HeaderForPrint{
+    display: block;
+    margin-top: 1px;
+    font-size:48px;
+    margin-bottom: 50px;
+    margin-left: 10px !important;
+  }
+  #filename{
+    font-size: 30px;
+    padding-top: 20px;
+   }
+   .footer{
+     display: block;
+   }
+}

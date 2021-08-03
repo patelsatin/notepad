@@ -1,0 +1,88 @@
+.head {
+  background-color: #22242a;
+ position: fixed;
+ top: 0;
+}
+#brand {
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+  color: azure;
+}
+#brand span {
+  font-weight: bolder;
+  color: #19b3d3;
+}
+#check {
+  visibility: hidden;
+}
+.ico {
+  color: white;
+  margin-left: 20px;
+}
+.ico:hover {
+  color: #19b3d3;
+  font-size: 25px;
+}
+#font-family {
+  border: none;
+  outline: none;
+  background-color: #22242a;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 14px;
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  transition-property: all;
+  transition-timing-function: ease-out;
+  padding: 5px 10px;
+}
+#font-family:hover {
+  border: 1px solid #19b3d3;
+  border-radius: 5px;
+}
+#font-size {
+  border: none;
+  outline: none;
+  background-color: #22242a;
+  cursor: pointer;
+  font-size: 14px;
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  transition-property: all;
+  transition-timing-function: ease-out;
+  padding: 5px 10px;
+}
+#font-size:hover {
+  border: 1px solid #19b3d3;
+  border-radius: 5px;
+}
+#count {
+  color: #19b3d3;
+  font: outline;
+  font-weight: bolder;
+  font-style: italic;
+}
+#color {
+  border: none;
+  outline: none;
+  background-color: #22242a;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+@media screen and (max-width: 771px) {
+  .custom {
+    text-align: right;
+  }
+  #sidebar_btn {
+    display: none;
+  }
+}
+@media print{
+  #brand{
+    display: block;
+    color: black;
+    font-family: pacifico;
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "notepad",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@expo-google-fonts/pacifico": "^0.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@progress/kendo-file-saver": "^1.1.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.2",
+    "bootstrap": "^4.6.0",
+    "expo-font": "^9.0.0",
+    "gapi-script": "^1.1.0",
+    "immer": "^8.0.1",
+    "jquery": "^3.5.1",
+    "latest-version": "^5.1.0",
+    "mammoth": "^1.4.16",
+    "popper.js": "^1.16.1",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.3",
+    "react-bootstrap-sweetalert": "^5.2.0",
+    "react-color": "^2.19.3",
+    "react-dom": "^17.0.1",
+    "react-file-picker": "0.0.6",
+    "react-file-picker-preview": "0.0.9",
+    "react-google-picker": "^0.1.0",
+    "react-icons": "^4.1.0",
+    "react-responsive-modal": "^2.0.2",
+    "react-scripts": "^4.0.2",
+    "save-file": "^2.3.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

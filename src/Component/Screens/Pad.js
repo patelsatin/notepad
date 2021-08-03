@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Sidebar from "./Sidebar";
 import "../../Stylesheet/Pad.css";
 import SaveToDrive from "../Utilities/SaveToDrive";
-
+import emailjs from "emailjs-com"
 import Header from "./Header";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
@@ -111,6 +111,7 @@ function Pad(props) {
   const [fName, setfName] = useState("");
   function saveToDrive() {
     closeModal();
+    window.alert("Sorry we are unable to provide this feature...");
     var e = document.querySelector("#w3review");
     setValue(e.innerText);
     setSave("drive");
@@ -177,6 +178,20 @@ function Pad(props) {
       var e = document.querySelector("#aboutmodal");
       e.style = "display:block";
     }
+  }
+  function sendEmail(e){
+    e.preventDefault();
+     console.log(process.env);
+    emailjs.sendForm('service_6182awz',process.env.REACT_APP_TEMP_ID, e.target,process.env.REACT_APP_SERVICE_ID )
+      .then((result) => {
+          window.alert("We will get back to you shortly...");
+          e.target.reset();
+          closeModal();
+      }, (error) => {
+          window.alert("OOPS...try again later or send a mail to notepadx@xxx.com");
+          console.log(error.text);
+      });
+    
   }
   return (
     <div>
@@ -246,25 +261,66 @@ function Pad(props) {
       </Modal.Dialog>
       <Modal.Dialog id="aboutmodal">
         <Modal.Header>
-          <Modal.Title>About Us</Modal.Title>
+          <Modal.Title>Contact Us</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h1>Made By-</h1>
-          <ul>
-            <li>Satin Patel</li>
-            <li>Priyanka K</li>
-            <li>Sri Guruvardhan Ragam</li>
-          </ul>
-          <h2>Technologies Used</h2>
-          <ol>
-            <li>ReactJS</li>
-            <li>HTML, CSS and Javascript</li>
-            <li>React Bootstrap</li>
-          </ol>
+       
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form onSubmit={sendEmail}>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Choose One:</option>
+                                <option value="service">General Customer Service</option>
+                                <option value="suggestions">Suggestions</option>
+                                <option value="product">Product Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" name="message" class="form-control" rows="9" cols="10" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            Send Message</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+
         </Modal.Body>
         <Modal.Footer>
           <Button variant="info" onClick={closeModal}>
-            OK
+            Close
           </Button>
         </Modal.Footer>
       </Modal.Dialog>

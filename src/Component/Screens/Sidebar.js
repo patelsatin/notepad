@@ -7,10 +7,10 @@ import {
   FaFacebookF,
   FaStickyNote,
   FaPrint,
-  FaRandom,
+  FaRocketchat,
   FaWindowClose,
-  FaGooglePlusG,
-  FaWindowMaximize,
+  FaLinkedin,
+  
 } from "react-icons/fa";
 function newPage() {
   window.open("http://localhost:3000");
@@ -73,8 +73,8 @@ function Sidebar(props) {
             <span className="apn"> Print</span>
           </a>
           <a href="#"  onClick={props.about}>
-            <FaRandom color="white" className="ico" size="25px" />
-            <span className="apn"> About</span>
+            <FaRocketchat color="white" className="ico" size="25px" />
+            <span className="apn"> Contact Us</span>
           </a>
           <a href="#" onClick={props.clear}>
             <FaWindowClose color="white" className="ico" size="25px" />
@@ -83,9 +83,9 @@ function Sidebar(props) {
          
         </div>
         <div class="footer1">
-          <a href="#" className="social"><FaInstagram  color="#19b3d3" className="ico" size="25px" /></a>
-         <a href="#" className="social"><FaFacebookF color="#19b3d3" className="ico" size="20px" /></a>
-          <a href="#" className="social"><FaGooglePlusG color="#19b3d3" className="ico" size="35px" /></a>
+          <a href="https://www.instagram.com/__patel_saab___/" className="social"><FaInstagram  color="#19b3d3" className="ico" size="25px" /></a>
+         <a href="https://www.facebook.com/satin.patel.108" className="social"><FaFacebookF color="#19b3d3" className="ico" size="20px" /></a>
+          <a href="https://www.linkedin.com/in/satin-patel-07967a150/" className="social"><FaLinkedin color="#19b3d3" className="ico" size="30px" /></a>
           </div>
       </div>
 
@@ -113,7 +113,7 @@ function Sidebar(props) {
           <FaPrint color="white" className="ico" size="25px" />
         </a>
         <a  onClick={props.about}>
-          <FaRandom color="white" className="ico" size="25px" />
+          <FaRocketchat color="white" className="ico" size="25px" />
         </a>
         <a href="#" onClick={props.clear}>
           <FaWindowClose color="white" className="ico" size="25px" />

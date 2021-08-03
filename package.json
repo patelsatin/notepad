@@ -13,13 +13,17 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
     "bootstrap": "^4.6.0",
+    "dotenv": "^8.0.0",
+    "emailjs-com": "^3.2.0",
     "expo-font": "^9.0.0",
     "gapi-script": "^1.1.0",
     "gh-pages": "^3.2.3",
+    "glob-parent": "^6.0.1",
     "immer": "^8.0.1",
     "jquery": "^3.5.1",
     "latest-version": "^5.1.0",
-    "mammoth": "^1.4.16",
+    "mammoth": "^1.4.17",
+    "normalize-url": "^7.0.0",
     "popper.js": "^1.16.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
@@ -60,5 +64,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-env-run": "^4.0.2"
   }
 }

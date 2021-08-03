@@ -3,6 +3,8 @@ import Modal from "react-bootstrap/Modal";
 import "../../Stylesheet/Drive.css";
 import Button from "react-bootstrap/Button";
 import SweetAlert from "react-bootstrap-sweetalert";
+
+
 var SCOPE = "https://www.googleapis.com/auth/drive";
 var discoveryUrl = "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest";
 
@@ -30,9 +32,9 @@ class SaveToDrive extends Component {
     try {
       window.gapi.client
         .init({
-          apiKey: "AIzaSyB4Gtr-knEfvBqchJjNfoY7NolUIhHYvnM",
+          apiKey: process.env.REACT_APP_API_KEY,
           clientId:
-            "965913890358-sd2i2tuj5d8itpkbjv1v1q1nhu8rk0qf.apps.googleusercontent.com",
+           process.env.REACT_APP_CLIENT_ID,
           scope: SCOPE,
           discoveryDocs: [discoveryUrl],
         })
